@@ -2,25 +2,25 @@
 
 <mat-card>
   <mat-card-header>
-    <mat-card-title>À propos de moi</mat-card-title>
+    <mat-card-title><app-translate key="HOME.TITLE"></app-translate></mat-card-title>
     <div id="links">
-      <a href="https://www.linkedin.com/in/evans-maignan-9bb548271/" target="_blank">
+      <a [matTooltip]="tooltipLinkedIn" href="https://www.linkedin.com/in/evans-maignan-9bb548271/" target="_blank">
         <img src="assets/images/linkedin.png" alt="linkedin" width="30" height="30">
       </a>
-      <a href="https://github.com/EvansMaignan" target="_blank">
+      <a [matTooltip]="tooltipGithub" href="https://github.com/EvansMaignan" target="_blank">
         <img src="assets/images/github.png" alt="github" width="30" height="30">
       </a>
     </div>
   </mat-card-header>
   <hr style="border-top: 1px solid white; width: 95%">
   <mat-card-content>
-    <p>Étudiant et major de promotion en 2e année de BUT Informatique à l'IUT de Nice Côte d'Azur sur le site de Sophia Antipolis, je suis admis à Polytech Nice Sophia pour y suivre une formation d’ingénieur en alternance en spécialité Informatique. Je suis sérieux et déterminé à faire de ma passion mon métier.</p>
-    <p>Au cours de mes deux années d'alternance, j'ai eu l'opportunité d'acquérir un ensemble de compétences précieuses qui ont façonné ma trajectoire professionnelle. Grâce à cette expérience, j'ai développé une capacité à m'adapter rapidement aux environnements de travail variés, tout en démontrant une forte motivation et un engagement sans faille pour mes missions. Mon sens de l'organisation s'est affiné au fil du temps, me permettant de gérer efficacement les tâches quotidiennes et de respecter les délais impartis. De plus, ma curiosité intellectuelle m'a poussé à toujours chercher à approfondir mes connaissances et à rester à l'affût des dernières avancées dans mon domaine. Fort de ces acquis, je suis déterminé à poursuivre mes études jusqu'à l'obtention d'un bac +5, afin de continuer à me perfectionner et de contribuer de manière significative au monde professionnel de demain.</p>
+    <p><app-translate key="HOME.FIRST_PARAGRAPH"></app-translate></p>
+    <p><app-translate key="HOME.SECOND_PARAGRAPH"></app-translate></p>
   </mat-card-content>
   <hr style="border-top: 1px solid white; width: 95%">
   <mat-card-footer>
-    <a href="assets/CV.pdf" download="CV-MAIGNAN.pdf">
-      <button mat-raised-button color="primary">Télécharger mon CV</button>
+    <a [href]="cvLink" download="CV-MAIGNAN.pdf">
+      <button mat-raised-button color="primary"><app-translate key="HOME.CV"></app-translate></button>
     </a>
 
   </mat-card-footer>

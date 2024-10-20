@@ -1,3 +1,46 @@
-<app-toolbar></app-toolbar>
+<mat-toolbar>
+  <button mat-icon-button [matTooltip]="isDrawerOpen ? tooltipCloseMenu : tooltipOpenMenu" aria-label="Menu icon" (click)="drawer.toggle()">
+    <mat-icon>{{ isDrawerOpen ? 'close' : 'menu' }}</mat-icon>
+  </button>
+  <span>Portfolio | Evans Maignan</span>
+
+  <div class="toolbar-right">
+    <mat-form-field appearance="fill" class="language-select">
+      <mat-label><app-translate key="MENU.LANGUAGE"></app-translate></mat-label>
+      <mat-select [(value)]="currentLang" (selectionChange)="changeLanguage($event.value)">
+        <mat-option value="en">English</mat-option>
+        <mat-option value="fr">Français</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</mat-toolbar>
 
 <router-outlet></router-outlet>
+
+<mat-drawer-container hasBackdrop="true" (backdropClick)="drawer.close()">
+
+  <mat-drawer #drawer mode="over" id="drawer" (openedChange)="isDrawerOpen = $event">
+    <a routerLink="/home" routerLinkActive="active-link" (click)="drawer.close()">
+      <mat-icon>system_update</mat-icon>
+      <span><app-translate key="NAVIGATION.HOME"></app-translate></span>
+    </a>
+    <a routerLink="/education" routerLinkActive="active-link" (click)="drawer.close()">
+      <mat-icon>alt_route</mat-icon>
+      <span><app-translate key="NAVIGATION.EDUCATION"></app-translate></span>
+    </a>
+    <a routerLink="/skills" routerLinkActive="active-link" (click)="drawer.close()">
+      <mat-icon>fork_right</mat-icon>
+      <span><app-translate key="NAVIGATION.SKILLS"></app-translate></span>
+    </a>
+    <a routerLink="/work-experience" routerLinkActive="active-link" (click)="drawer.close()">
+      <mat-icon>festival</mat-icon>
+      <span><app-translate key="NAVIGATION.WORK_EXPERIENCE"></app-translate></span>
+    </a>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+</mat-drawer-container>
