@@ -1,0 +1,58 @@
+{
+  "NAVIGATION": {
+    "HOME": "Home",
+    "EDUCATION": "Education",
+    "WORK_EXPERIENCE": "Work Experience",
+    "SKILLS": "Skills"
+  },
+  "MENU": {
+    "CLOSE_MENU": "Close menu",
+    "OPEN_MENU": "Open menu",
+    "LANGUAGE": "Language"
+  },
+  "HOME": {
+    "TITLE": "About me",
+    "FIRST_PARAGRAPH": "I'm a student at Polytech Nice Sophia on a sandwich course in Computer Science. I'm looking for a company in which to complete my international mobility internship. I'm serious and determined to make my passion my profession.",
+    "SECOND_PARAGRAPH": "During my work-study years, I had the opportunity to acquire a set of valuable skills that have shaped my career path. Thanks to this experience, I developed an ability to adapt quickly to a variety of work environments, while demonstrating strong motivation and commitment to my assignments. My organizational skills have been honed over time, enabling me to efficiently manage daily tasks and meet deadlines. What's more, my intellectual curiosity has driven me to constantly seek to deepen my knowledge and keep abreast of the latest advances in my field. On the strength of these achievements, I am determined to continue my studies until I obtain a degree in Computer Engineering, with the sole aim of continuing to improve myself and thus make a significant contribution to tomorrow's professional world.",
+    "GITHUB": "See my GitHub profile",
+    "LINKEDIN": "See my LinkedIn profile",
+    "CV": "Download my CV"
+  },
+  "EDUCATION": {
+    "TITLE": "Education",
+    "ENGINEERING": "Work-linked engineering training, specializing in IT",
+    "BUT": "Work-linked BUT Informatique (University Bachelor of Technology in Computer Science)",
+    "CPGE": "CPGE PTSI (Preparatory Class for the Grandes Écoles, PTSI stream)",
+    "BAC": "General Baccalaureate European Section English Highest Honours"
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "HARDSKILLS": "Hardskills",
+    "SOFTSKILLS": {
+      "TITLE": "Softskills",
+      "ITEMS": {
+        "ADAPTABILITY": "Adaptability",
+        "AUTONOMY": "Autonomy",
+        "INITIATIVE": "Initiative",
+        "ORGANIZATION": "Organization",
+        "THOROUGHNESS": "Thoroughness",
+        "TEAMWORK": "Teamwork"
+      }
+    }
+  },
+  "WORK_EXPERIENCE": {
+    "TITLE": "Work Experience",
+    "BIGSOOL": {
+        "TITLE": "DevOps apprentice",
+        "MISSION1": "Development and deployment of an intranet showcasing temporary test environments",
+        "MISSION2": "Creation of CI/CD pipelines",
+        "MISSION3": "Implementation of cloud infrastructure audit and security services",
+        "MISSION4": "Technologies used : Angular, Nestjs, TypeORM, PostgreSQL, Kubernetes, Docker, Fastlane..."
+    },
+    "SYNERGY": {
+        "TITLE": "Computer technician apprentice",
+        "MISSION1": "Remote or on-site assistance and troubleshooting for customers",
+        "MISSION2": "Development of solutions to optimise production processes"
+    }
+  }
+}
